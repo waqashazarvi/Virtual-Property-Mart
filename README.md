@@ -1,2 +1,3 @@
 # Virtual Property Mart
- Using Python Flask
+Using Python Flask
+I used MySQL database 
