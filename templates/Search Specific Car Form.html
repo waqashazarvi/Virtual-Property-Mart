@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Car</title>
+    <link rel="stylesheet" href="static/custom5.css"> <!-- Add your custom CSS file here -->
+</head>
+<body>
+    <div class="container">
+        <h1>Search Car</h1>
+        <form action="/goToSpecifiedCars" method="POST">
+            <div class="form-group">
+                <label for="location">Model:</label>
+                <input type="text" id="location" name="model" >
+            </div>
+            <div class="form-group">
+                <label for="start-range">Start Price Range:</label>
+                <input type="number" id="start-range" name="start-range" >
+            </div>
+            <div class="form-group">
+                <label for="end-range">End Price Range:</label>
+                <input type="number" id="end-range" name="end-range" >
+            </div>
+
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</body>
+</html>

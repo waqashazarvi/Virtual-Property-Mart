@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Visit Places</title>
+    <link rel="stylesheet" href="static/bootstrapStudio/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/bootstrapStudio/css/bs-theme-overrides.css">
+    <link rel="stylesheet" href="static/bootstrapStudio/css/Articles-Cards-images.css">
+    <link rel="stylesheet" href="static/bootstrapStudio/css/Navbar-Right-Links-Dark-icons.css">
+    <link rel="stylesheet" href="static/custom.css">
+
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="static/assets/css/templatemo-plot-listing.css">
+    <link rel="stylesheet" href="static/custom2.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="static/assets/images/white-logo.png" alt="Logo">
+        </div>
+        <div class="navbar-buttons">
+            <button class="navbar-button"><a href="/Home">Go to Home</a></button>
+            <button class="navbar-button"><a href="/addPlace">Add Places</a></button>
+            <button class="navbar-button"><a href="/goToSpecificPlace">Search Custom Apartment</a></button>
+        </div>
+    </nav>
+    <div class="text">
+        <h1>Apartment Listings</h1>
+    </div>
+    <div class="card-container">
+        {% for apartment in apartments %}
+        <div class="card">
+            <img src="{{ apartment.image}}" alt="Apartment Photo">
+            <div class="card-content">
+                <div>
+                    <center>
+                        <h6 class="text1"><strong>Apartment number :{{apartment.id}}</strong></h6>
+                    </center>
+                </div>
+                <h5><strong>Area : </strong>{{ apartment.area }} <strong> Ft </strong></h5>
+                <p><strong>Location :</strong>{{apartment.location}}</p>
+                <p><strong>Price:</strong> {{ apartment.price }}</p>
+                <p><strong>Owner:</strong> {{ apartment.owner }}</p>
+                <p><strong>{{ apartment.description }}</strong></p>
+
+                <button class="buy-button"><a href="/buyPlace/{{ apartment.id }}">Buy</a></button>
+
+
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <h2 class="msg">{{message}}</h2>
+
+
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="about">
+                <div class="logo">
+                  <img src="static/assets/images/white-logo.png" alt="Plot Listing">
+                </div>
+                <p>If you consider that <a rel="nofollow" href="https://templatemo.com/tm-564-plot-listing" target="_parent">Plot Listing template</a> is useful for your website, please <a rel="nofollow" href="https://www.paypal.me/templatemo" target="_blank">support us</a> a little via PayPal.</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="helpful-links">
+                <h4>Helpful Links</h4>
+                <div class="row">
+                  <div class="col-lg-6 col-sm-6">
+                    <ul>
+                      <li><a href="/goToAboutUsPage">About Us</a></li>
+                      <li><a href="/goToContactPage">Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6">
+                    <ul>
+                      <li><a href="/goToAboutUsPage">About Us</a></li>
+                      <li><a href="#">Awards</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="contact-us">
+                <h4>Contact Us</h4>
+                <p>27th Street of New Town, Digital Villa</p>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <a href="#">010-020-0340</a>
+                  </div>
+                  <div class="col-lg-6">
+                    <a href="#">090-080-0760</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="sub-footer">
+                <p>Copyright © 2021 Plot Listing Co., Ltd. All Rights Reserved.
+                <br>
+                Design: <a rel="nofollow" href="https://templatemo.com" title="CSS Templates">TemplateMo</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="static/assets/js/owl-carousel.js"></script>
+    <script src="static/assets/js/animation.js"></script>
+    <script src="static/assets/js/imagesloaded.js"></script>
+    <script src="static/assets/js/custom.js"></script>
+    <script src="static/bootstrapStudio/assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+body
+{
+    background-color: aqua;
+}
+a
+{
+    color: white;
+}
+.success-message {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.success-message h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.success-message p {
+    font-size: 16px;
+    color: #777;
+}
+
+.go-home-button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.go-home-button:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Property Form</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <h1>ADD PROPERTY</h1>
+    <form action="/submitProperty" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="area">Property Area (in square feet):</label>
+            <input type="text" id="area" name="area" required>
+        </div>
+        <div class="form-group">
+            <label for="location">Property Location:</label>
+            <input type="text" id="location" name="location" required>
+        </div>
+        <div class="form-group">
+            <label for="price">Price (in USD):</label>
+            <input type="number" id="price" name="price" required>
+        </div>
+        <div class="form-group">
+            <label for="owner">Owner's Name:</label>
+            <input type="text" id="owner" name="owner" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Property Description:</label>
+            <textarea id="description" name="description"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="picture">Upload Property Picture:</label>
+            <input type="file" id="picture" name="image">
+        </div>
+        <div class="form-group">
+            <label for="price">Acceptable Amount (in USD):</label>
+            <input type="number" id="price" name="accprice" required>
+        </div>
+        <h5 class="msg">{{message}}</h5>
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>

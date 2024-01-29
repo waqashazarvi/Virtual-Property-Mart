@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Form</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <h1>ADD CAR</h1>
+    <form action="/submitCar" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="area">Model Name:</label>
+            <input type="text" id="area" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="area">Seating Capacity ( # of individuals):</label>
+            <input type="text" id="area" name="seatingCap" required>
+        </div>
+        <div class="form-group">
+            <label for="location">Price (in USD):</label>
+            <input type="text" id="location" name="price" required>
+        </div>
+        <div class="form-group">
+            <label for="owner">Owner's Name:</label>
+            <input type="text" id="owner" name="owner" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="picture">Upload Picture:</label>
+            <input type="file" id="picture" name="image" required>
+        </div>
+        <div class="form-group">
+            <label for="price">Acceptable Amount (in USD):</label>
+            <input type="number" id="price" name="accprice" required>
+        </div>
+        <h5 class="msg">{{message}}</h5>
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>

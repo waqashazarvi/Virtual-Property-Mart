@@ -1,0 +1,94 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f2f2f2; */
+    background-color: white;
+    padding: 20px;
+
+
+    background-image: url("/static/assets/images/7.jpg");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 100% 70%
+}
+
+h1 {
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    margin: 0;
+}
+
+.msg
+{
+    background-color: crimson;
+    color:black;
+}
+.text
+{
+    margin: 20px;
+}
+
+.buy-button {
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    padding: 6px 14px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .buy-button:hover {
+    background-color: #4cae4c;
+  }
+  .text1
+  {
+        margin: 20px;
+  }
+a
+{
+    color: black;
+
+}
+footer
+{
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    color: white; /* White text color */
+    text-align: center;
+    padding: 10px;
+}
+footer p, footer a {
+    color: white; /* Set the text color of paragraphs and links within the footer as white */
+}
